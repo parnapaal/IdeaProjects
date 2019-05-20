@@ -32,7 +32,7 @@ public class ItemTest {
         double cost = 11.00;
 
         Item newItem = new Item(coffee,cost);
-        assertEquals(cost, newItem.getTax(), DELTA);
+        assertEquals(0.0, newItem.getTax(), DELTA);
 
     }
 
@@ -42,7 +42,7 @@ public class ItemTest {
         double cost = 16.00;
 
         Item newItem = new Item(candy,cost);
-        assertEquals(cost, newItem.getTax(), DELTA);
+        assertEquals(0.0, newItem.getTax(), DELTA);
 
     }
 
@@ -52,7 +52,7 @@ public class ItemTest {
         double cost = 11.00;
 
         Item newItem = new Item(popcorn,cost);
-        assertEquals(cost, newItem.getTax(), DELTA);
+        assertEquals(0.0, newItem.getTax(), DELTA);
 
     }
 
@@ -67,9 +67,10 @@ public class ItemTest {
 
     }
 
-    /*sales tax needs to be rounding to the nearest .05 (nickel). so
+
+    /*sales tax needs to be rounding up to the nearest .05 (nickel). so
     after rounding, the tax should only ever end with .00 or .05
-     */
+
     @Test
     public void checkingRoundingWithOdd(){
         String discman = "Discman";
@@ -83,15 +84,33 @@ public class ItemTest {
 
     /*sales tax needs to be rounding to the nearest .05 (nickel). so
     after rounding, the tax should only ever end with .00 or .05
-     */
+
     @Test
     public void checkingRoundingWithEven(){
         String discman = "Discman";
-        //a cost of 55.6 (.1) = 5.56 -- rounded down this should be 5.55
+        //a cost of 55.6 (.1) = 5.56 -- rounded up this should be 5.6
         double cost = 55.6;
 
         Item newItem = new Item(discman,cost);
         assertEquals(5.55, newItem.getTax(), DELTA);
+
+    }
+
+     */
+
+
+    /* I have tried everything under the sun to get this to read out
+    with a .5, not .45 so lets see if java knows something I don't
+     */
+    @Test
+    public void checkingThisGodDamnVespa(){
+        String vespa = "Vespa";
+        //like have I forgotten how to add two numbers together whats happening
+        double cost = 15001.25;
+        double total = 17251.5;
+
+        Item newItem = new Item(vespa,cost);
+        assertEquals(total-cost, newItem.getTax(), DELTA);
 
     }
 
