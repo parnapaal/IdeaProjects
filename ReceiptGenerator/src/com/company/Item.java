@@ -104,9 +104,8 @@ public class Item {
     }
 
     //this is currently not correct. It needs to always round up
-    /*TODO : add in Math.ceiling 
+    /*TODO : add in Math.ceiling
     */
-     */
     private double round(double price){
          return (Math.round(price * 20) / 20.0);
 

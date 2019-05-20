@@ -5,17 +5,19 @@ import java.util.Map;
 
 
 public class ShoppingBasket {
+    /*this map contains our entire basket as well as the number of
+    our entries and the cost of the item (kept in List<Double>)
+     */
+    Map<String, List<Double>> basket;
 
+    //instantiate our basket
+    public ShoppingBasket(String[] entries) {
 
-
-
-    public ShoppingBasket(String[] basket) {
-        //instantiate myBasket when called
-        String test = "test";
     }
 
-    private void fillPrices(String[] basket){
-        //fill up the Map
+    //parse each line into the necessary parts to store within our Map
+    private void parse(String entry){
+
     }
 
 
@@ -23,10 +25,6 @@ public class ShoppingBasket {
         //print out my basket
     }
 
-    private double round(double price) {
-        //round to the nearest .05
-        return Math.round(price * 20.0) / 20.0;
-    }
 
 
 
