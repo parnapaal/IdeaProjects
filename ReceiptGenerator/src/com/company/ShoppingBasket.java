@@ -3,17 +3,10 @@ package com.company;
 import java.util.List;
 import java.util.Map;
 
-public class
 
 public class ShoppingBasket {
 
-    private Map<String, List<Integer>> itemAndTax;
 
-    private String[] exemptItems;
-
-    static {
-
-    }
 
 
     public ShoppingBasket(String[] basket) {
