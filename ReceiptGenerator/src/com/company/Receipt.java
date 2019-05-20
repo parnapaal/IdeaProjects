@@ -28,12 +28,11 @@ public class Receipt {
 
         //output still needs to be cleaned up
         //TODO: remove extraneous data
-        ArrayLength = Arrays.toString(entry.split("Shopping Basket").length;
-        return Arrays.toString(entry.split("Shopping Basket");
+        ArrayLength = entry.split("Shopping Basket").length;
+        return entry.split("Shopping Basket");
 
     }
 
 
     }
 
-}

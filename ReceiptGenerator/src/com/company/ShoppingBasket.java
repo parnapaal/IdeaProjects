@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -8,10 +9,11 @@ public class ShoppingBasket {
     /*this map contains our entire basket as well as the number of
     our entries and the cost of the item (kept in List<Double>)
      */
-    Map<Item, Integer> basket;
+    private Map<Item, Integer> basket;
 
     //instantiate our basket
     public ShoppingBasket(String[] entries) {
+        basket = new HashMap<>();
         for(String entry : entries) {
             parse(entry);
         }
@@ -27,7 +29,7 @@ public class ShoppingBasket {
     private void parse(String entry){
 
         //number of the type of item in the cart is the first integer in the entry (needs to be cast)
-        int numberOfItems =  Integer.parseInt(entry.split(" ")[0]);
+        Integer numberOfItems =  Integer.parseInt(entry.split(" ")[0]);
 
         //remove this integer
         entry = entry.split(" ",2)[1];
@@ -37,7 +39,8 @@ public class ShoppingBasket {
         entry = entry.replaceFirst(entry.substring(entry.lastIndexOf(" ")+1), "");
 
         //remove unecessary wording
-        entry = entry.replaceFirst("at", "");
+        entry = entry.replaceFirst("at", "").trim();
+        //debug: .strip()
 
         //add our entry to the basket
         basket.put(createNewItem(entry,price),numberOfItems);
