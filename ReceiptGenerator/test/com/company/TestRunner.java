@@ -1,4 +1,5 @@
 import com.company.ItemTest;
+import com.company.ReceiptTest;
 import com.company.ShoppingBasketTest;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
@@ -10,20 +11,32 @@ public class TestRunner {
 
         /*
         Result result = JUnitCore.runClasses(ItemTest.class);
+        Result result2 = JUnitCore.runClasses(ShoppingBasketTest.class);
 
         for (Failure failure : result.getFailures()) {
             System.out.println(failure.toString());
         }
 
          */
-
+        Result result = JUnitCore.runClasses(ItemTest.class);
         Result result2 = JUnitCore.runClasses(ShoppingBasketTest.class);
+        Result result3 = JUnitCore.runClasses(ReceiptTest.class);
+
+        for (Failure failure : result.getFailures()) {
+            System.out.println(failure.toString());
+        }
 
         for (Failure failure : result2.getFailures()) {
             System.out.println(failure.toString());
         }
 
+
+        for (Failure failure : result3.getFailures()) {
+            System.out.println(failure.toString());
+        }
+        System.out.println(result.wasSuccessful());
         System.out.println(result2.wasSuccessful());
+        System.out.println(result3.wasSuccessful());
     }
 
 }
