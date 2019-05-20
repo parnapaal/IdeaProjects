@@ -1,6 +1,6 @@
-import com.company.ItemTest;
-import com.company.ReceiptTest;
-import com.company.ShoppingBasketTest;
+package com.company;
+
+
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;

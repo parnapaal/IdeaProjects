@@ -7,17 +7,11 @@ import java.io.*;
 
 
 public class Receipt {
-    public static int ArrayLength;
     public static void main(String[] args) throws Exception{
 
 
-        //TODO: should we keep openFile?
-        //open up our file based on where the user put our directory
-        String userDir = System.getProperty("user.dir");
-        String fileName = userDir + "/input.txt";
-
         //read in the entire file as one big string
-        String content = new String ( Files.readAllBytes(Paths.get(fileName) ) );
+        String content = openFile();
 
 
         //parse our big string into our shopping carts
@@ -29,13 +23,11 @@ public class Receipt {
             String[] oneBasket = parseBasketforItems(entries[i]);
             ShoppingBasket myBasket = new ShoppingBasket(oneBasket);
 
-            //TODO: print our basket -- test this first
+            System.out.println("Output " + (i+1) + ": ");
+            myBasket.printBasket();
+            System.out.println();
 
         }
-
-        //myBasket.printBasket();
-
-
 
     }
 
@@ -82,6 +74,7 @@ public class Receipt {
     private static String[] clean(String[] name){
         for(int i=0; i<name.length; i++){
             name[i] = name[i].trim();
+            name[i] = name[i].replace(",","");
         }
 
         return name;

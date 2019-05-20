@@ -112,7 +112,7 @@ public class Item {
         //check to see if this item is imported
 
 
-        if(this.name.contains("imported")) {
+        if(this.name.toLowerCase().contains("imported")) {
             return true;
         }
 
@@ -120,13 +120,16 @@ public class Item {
 
     }
 
-    //this is currently not correct. It needs to always round up
-    /*TODO : add in Math.ceiling
-    */
-    private double round(double price){
-         return (Math.round(price * 20) / 20.0);
+    private static double round(double price){
+
+        int doubleToInt = (int)Math.round(price* 100);
+        doubleToInt = (doubleToInt + 4) / 5 * 5;
+
+        double intToDouble = doubleToInt / 100.00;
+        return intToDouble;
 
     }
+
 
     private void buildDict(){
         exempt = new HashMap<>();

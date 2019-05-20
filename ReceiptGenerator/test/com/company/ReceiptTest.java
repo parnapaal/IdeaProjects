@@ -73,7 +73,7 @@ public class ReceiptTest {
 
         String basket2 = "2:\n" +
                 "1 imported bag of Vanilla-Hazelnut Coffee at 11.00\n" +
-                "1 Imported Vespa at 15,001.25";
+                "1 Imported Vespa at 15001.25";
 
 
         String basket3 = "3:\n" +

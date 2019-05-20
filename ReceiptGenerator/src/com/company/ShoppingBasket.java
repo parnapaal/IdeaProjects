@@ -1,5 +1,6 @@
 package com.company;
 
+import java.text.NumberFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -39,7 +40,7 @@ public class ShoppingBasket {
         entry = entry.replaceFirst(entry.substring(entry.lastIndexOf(" ")+1), "");
 
         //remove unecessary wording
-        entry = entry.replaceFirst("at", "").trim();
+        entry = entry.replaceFirst(" at ", "").trim();
         //debug: .strip()
 
         //add our entry to the basket
@@ -65,6 +66,7 @@ public class ShoppingBasket {
     public void printBasket() {
         double totalTax = 0.0;
         double totalCost = 0.0;
+        String format = "%-40s%s%n";
 
         //iterate through the basket
         for(Map.Entry<Item,Integer> e: basket.entrySet()){
@@ -81,11 +83,13 @@ public class ShoppingBasket {
             totalCost += subtotal;
 
 
-            System.out.println(howMany + " " + item.getName() + " " + subtotal);
+            //TODO: these aren't printing out in the correct order -- forgot that HashMaps are unordered
+            System.out.println("    " + howMany + " " + item.getName() + ": " + subtotal);
         }
 
-        System.out.println("Sales Tax: " + totalTax);
-        System.out.println("Total: " +  totalCost);
+        NumberFormat formatter = NumberFormat.getCurrencyInstance();
+        System.out.println("    Sales Tax: " + totalTax);
+        System.out.println( "    Total: " +  formatter.format(totalCost));
     }
 
 
