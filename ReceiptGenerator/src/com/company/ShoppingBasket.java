@@ -2,6 +2,7 @@ package com.company;
 
 import java.text.NumberFormat;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -14,7 +15,7 @@ public class ShoppingBasket {
 
     //instantiate our basket
     public ShoppingBasket(String[] entries) {
-        basket = new HashMap<>();
+        basket = new LinkedHashMap<>();
         for(String entry : entries) {
             parse(entry);
         }
@@ -84,7 +85,7 @@ public class ShoppingBasket {
 
 
             //TODO: these aren't printing out in the correct order -- forgot that HashMaps are unordered
-            System.out.println("    " + howMany + " " + item.getName() + ": " + subtotal);
+            System.out.println("    " + howMany + " " + item.getName() + ": " +  Math.round(subtotal * 100.00) / 100.00);
         }
 
         NumberFormat formatter = NumberFormat.getCurrencyInstance();
