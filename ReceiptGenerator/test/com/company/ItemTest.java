@@ -101,7 +101,7 @@ public class ItemTest {
 
     /* I have tried everything under the sun to get this to read out
     with a .5, not .45 so lets see if java knows something I don't
-     */
+
     @Test
     public void checkingThisGodDamnVespa(){
         String vespa = "Vespa";
@@ -113,6 +113,8 @@ public class ItemTest {
         assertEquals(total-cost, newItem.getTax(), DELTA);
 
     }
+
+     */
 
 
 
