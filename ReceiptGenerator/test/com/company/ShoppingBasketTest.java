@@ -110,6 +110,8 @@ public class ShoppingBasketTest {
 
     }
 
+    //print part of the basket to ensure it is correct
+    /*
     @Test
     public void testCorrectPrintout() {
         String[] entries = {"1 16lb bag of Skittles at 16.00",
@@ -121,7 +123,7 @@ public class ShoppingBasketTest {
 
 
     }
-
+*/
     /*
 
     @Test

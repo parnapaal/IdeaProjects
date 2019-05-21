@@ -138,6 +138,9 @@ public class Item {
         exempt.put("Popcorn",0);
         exempt.put("Snickers",0);
         exempt.put("Skittles",0);
+        exempt.put("Hershey's",0);
+        exempt.put("Reese's Pieces",0);
+        exempt.put("Mars",0);
     }
 
 }

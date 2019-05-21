@@ -1,9 +1,7 @@
 package com.company;
 
 import java.text.NumberFormat;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
 
@@ -57,17 +55,10 @@ public class ShoppingBasket {
     }
 
 
-    public Item getCartEntry(){
-
-        return null;
-    }
-
-
     //print out my basket
     public void printBasket() {
         double totalTax = 0.0;
         double totalCost = 0.0;
-        String format = "%-40s%s%n";
 
         //iterate through the basket
         for(Map.Entry<Item,Integer> e: basket.entrySet()){
@@ -84,7 +75,6 @@ public class ShoppingBasket {
             totalCost += subtotal;
 
 
-            //TODO: these aren't printing out in the correct order -- forgot that HashMaps are unordered
             System.out.println("    " + howMany + " " + item.getName() + ": " +  Math.round(subtotal * 100.00) / 100.00);
         }
 
