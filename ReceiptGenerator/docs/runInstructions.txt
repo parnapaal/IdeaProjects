@@ -1,0 +1,11 @@
+To Run this Program: 
+Start by compiling it! 
+cd to the directory where Receipt Generator is kept
+In terminal: ‘cd ReceiptGenerator/src/com/company/‘
+Then type in: ‘javac *.java’
+
+To run this program: 
+cd to the directory where Receipt Generator is kept
+cd to the directory where Receipt Generator is kept
+In terminal: ‘cd ReceiptGenerator/out/production/ReceiptGenerator/‘
+Then run: ‘java com.company.Receipt’

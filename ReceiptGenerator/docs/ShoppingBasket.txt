@@ -1,0 +1,61 @@
+package com.company;
+
+import java.text.NumberFormat;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+
+//Within ShoppingBasket, we take in an array of Strings, turn them into our grocery items
+//collect and organize the information we need about our items (Cost, tax, amount, etc) and print it out when we are told to (usually by Receipt.class)
+
+public class ShoppingBasket {
+    /*this map contains our entire basket as well as the number of
+    our entries and the cost of the item (kept in List<Double>)
+     */
+    private Map<Item, Integer> basket;
+
+    //instantiate our basket
+    public ShoppingBasket(String[] entries) {
+        //for each entry given, create and Item()
+    }
+
+    public Map<Item, Integer> getBasket(){
+        return basket;
+    }
+
+
+    //parse each line into the necessary parts to store within our Map
+    private void parse(String entry){
+
+        //number of the type of item in the cart is the first integer in the entry (needs to be cast)
+         //price of the item is the last item (double) in the entry
+ 
+	//call createNewItem()
+        
+        //add our entry to the basket
+        
+    }
+
+    //create a new instance of an item to add to our basket
+    private Item createNewItem(String name, double cost) {
+        
+        return newItem;
+
+    }
+
+
+
+    //print out my basket
+    public void printBasket() {
+        double totalTax = 0.0;
+        double totalCost = 0.0;
+        String format = "%-40s%s%n";
+
+        //iterate through the basket and print out all necessary information
+        
+    }
+
+
+
+
+}

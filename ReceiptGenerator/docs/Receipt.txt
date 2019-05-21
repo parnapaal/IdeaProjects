@@ -1,0 +1,59 @@
+package com.company;
+
+
+
+//This class calls the rest of our classes to actually do the work of printing
+public class Receipt {
+    public static void main(String[] args) throws Exception{
+
+
+        //read in the entire file as one big string
+        
+	//parse our big string into our shopping carts
+        
+        //for each shopping cart, parse out the separate entries into a string array
+       //and create an instance of ShoppingBasket
+        
+
+        }
+
+    }
+
+
+    //split out our super string into basket entry
+    public static String[] parseEntryForBaskets(String entry){
+
+        //split our string by basket
+        
+        //ignore oneBasket[0] as it holds nothing of interest
+        
+        return oneBasketCleaned;
+    }
+
+    //split our basket by item
+    public static String[] parseBasketforItems(String basket){
+
+        //use the newline symbol to indicate a new item
+
+        //ignore itemEntries[0] as there is nothing there of interest
+        
+        return itemEntriesCleaned;
+
+    }
+
+    //open up our file
+    public static String openFile() throws Exception{
+        //opens up our file and returns it as a string        
+	return content;
+
+    }
+
+    //clean out extraneous info
+    private static String[] clean(String[] name){
+       //gets rid of extra spaces and commas
+        return name;
+    }
+
+
+    }
+
