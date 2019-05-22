@@ -1,0 +1,39 @@
+#1 most common combination : Boone 7  Trek Fuel EX 9.8: 103 families own these bikes
+
+#2 most common combination : Trek Fuel EX 9.8  Boone 7: 101 families own these bikes
+
+#3 most common combination : Trek Fuel EX 9.8  monda SLR 9: 97 families own these bikes
+
+#4 most common combination : Trek Fuel EX 9.8  Madone 9.5: 91 families own these bikes
+
+#5 most common combination : Madone 9.5  Trek Fuel EX 9.8: 90 families own these bikes
+
+#6 most common combination : Speed Concept 9.9  Trek Fuel EX 9.8: 68 families own these bikes
+
+#7 most common combination : Farley 9.9  Trek Fuel EX 9.8: 67 families own these bikes
+
+#8 most common combination : Trek Fuel EX 9.8  Speed Concept 9.9: 65 families own these bikes
+
+#9 most common combination : monda SLR 9  Trek Fuel EX 9.8: 59 families own these bikes
+
+#10 most common combination : Trek Fuel EX 9.8  Farley 9.9: 56 families own these bikes
+
+#11 most common combination : Superfly 20  Trek Fuel EX 9.8: 40 families own these bikes
+
+#12 most common combination : Trek Fuel EX 9.8  CrossRip 3: 34 families own these bikes
+
+#13 most common combination : Trek Fuel EX 9.8  Superfly 20: 27 families own these bikes
+
+#14 most common combination : CrossRip 3  Trek Fuel EX 9.8: 26 families own these bikes
+
+#15 most common combination : Madone 9.5    Speed Concept 9.9    Verve 3  Speed Concept 9.9: 26 families own these bikes
+
+#16 most common combination : FX S 4 Women s  Trek Fuel EX 9.8: 24 families own these bikes
+
+#17 most common combination : Verve 3  Speed Concept 9.9: 24 families own these bikes
+
+#18 most common combination : Speed Concept 9.9  Madone 9.5: 22 families own these bikes
+
+#19 most common combination : Speed Concept 9.9  Verve 3: 22 families own these bikes
+
+#20 most common combination : CrossRip 3  Speed Concept 9.9: 22 families own these bikes
