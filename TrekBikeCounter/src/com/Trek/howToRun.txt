@@ -1,0 +1,6 @@
+To run this program: 
+Cd to the directory where the folder TrekBikeCounter is kept
+
+‘cd TrekBikeCounter/src/com/Trek’
+javac TrekBikeCounter.java
+java TrekBikeCounter.java
